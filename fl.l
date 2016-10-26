@@ -85,10 +85,10 @@ FROM {return FROM; }
 LIKE {return LIKE; }
 CREATE {return CREATE; }
 INDEX {return INDEX; }
-INTERVAL {return INTERVAL; }
 YEAR {return YEAR; }
 MONTH {return MONTH; }
 DAY {return DAY; }
+CAST_TO_INT {return CAST_TO_INT; }
 APPEND {return APPEND; }
 
 -?[0-9]+ { yylval.intval = atoll(yytext);  return INTNUM; }
